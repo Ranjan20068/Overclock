@@ -1,0 +1,104 @@
+Experiment 1 : setting up and basic commmands
+Step1: git init //Inititalize new repository
+step2: notepad filename.c - Save // Create New File
+Step3: git add filename.c // Add to Staging Area
+Step4: git commit -m "Your message" // Create Version
+
+To Change Author : git commit --amend --author="New Author Name <New Email>"
+
+Experiment 2 :creating and managing branches 1
+Step1 : git branch "feature-Branch"
+Step2 : git checkout "feature-Branch"
+Step3 : Create File/Commit
+Step4 : git checkout master
+Step5 : git merge "feature-Branch"
+Step6 : git log
+
+Experiment 3:creating and managing branches 2
+Step1 : notepad filename.txt
+Step2 : git add filename.txt
+Step3 : git commit -m "commit message here"
+Step4 : repeat the Step1 - Update the file
+Step5 : git add filename.txt
+Step6 : git stash save "Your Stash message here"
+Step7 : git status
+Step8 : git branch "new-branch" / git checkout -b "branch-name"
+Step9 : git checkout "new-branch"
+Step10 : git stash apply
+Step11: git status/log
+
+Experiment 4 : collaboratuion and remote repositories 1
+git init
+- vi filename // create/update new file
+- git add filename // add to staging area
+- git commit -m "commit message here"
+-> git clone <URL>
+
+Exp 5:collaboratuion and remote repositories 2
+git init
+- vi filename // create/update new file
+- git add filename // add to staging area
+- git commit -m "commit message here"
+- git remote add origin https://github.com/ngyatheesh/demo24.git
+- git fetch origin/main
+- git rebase origin/main
+- git push -u origin main
+
+Experiment 6:collaboratuion and remote repositories 3
+- notepad filename //create file and add content
+- git add filename // add to staging area
+- git commit -m "commit message here"
+- git branch "branch-name" // creating the branch
+- git checkout "branch-name"
+- notepad filename // edit previously created file
+- git add filename
+- git commit -m "commit message"
+- git checkout master
+- git merge "branch-name"
+- git log/show/status
+
+Experiment 7:git tags and release
+- notepad filename //create file and add content
+- git add filename // add to staging area
+- git commit -m "commit message here"
+- git tag "v1.0"
+- OR git tag "v1.0" <commit ID>
+
+Experiment 8:advanced git operations
+- create and checkout new branch
+- create file
+- add and commit
+- checkout to main branch
+- git cherry-pick <commit ID>
+
+
+Experiment 9:analysing and changing git history 1
+
+- notepad filename // create and update the file
+- git add filename // Add file to staging area
+- git commit -m "commit message"
+- git log --oneline
+- git show <commit ID>
+- git log -n 1 <commit ID>
+
+Experiment 10:analysing and changing git history 2
+
+- notepad filename // create and update the file
+- git add filename // Add file to staging area
+- git commit --author="JohnDoe <johndoe@gmail.com>" -m "commit message"
+- git log --author="JohnDoe" --since="2025-01-01" --until="2025-12-31"
+
+Experiment 11:analysing and changing git history 3
+- notepad filename // create and update the file
+- git add filename // Add file to staging area
+- git commit -m "commit message"
+- Repeat above 3 steps more than 5 times
+- git log -n 5
+
+Experiment 12:analysing and changing git history 4
+- notepad filename // create and update the file
+- git add filename // Add file to staging area
+- git commit -m "commit message"
+- Repeat above 3 steps
+- git log --oneline
+- git revert <commit ID>
